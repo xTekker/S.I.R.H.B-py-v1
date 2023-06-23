@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from embeds import helpembed, faqembed
+from embeds import helpembed, faqembed, releasedateembed, whoisembed, whatisthisembed, magehelpembed, knighthelpembed, warriorhelpembed, shrobembed
 from commands import register_commands
 
 # Create the bot instance
