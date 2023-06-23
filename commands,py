@@ -1,0 +1,57 @@
+from discord.ext import commands
+
+def register_commands(bot):
+    @bot.slash_command(description="Get the status of SIRHB.")
+    async def status(ctx):
+        await ctx.send(content="SIRHB Ready - Errors: 0 - Bot Ver: 1.0", ephemeral=True)
+
+    @bot.slash_command(description="Ping the bot.")
+    async def ping(ctx):
+        await ctx.send(content="Really? I'm an artificially intelligent bot and the best you can do is /ping? Shame.")
+
+    @bot.slash_command(description="Get help directory.")
+    async def help(ctx):
+        await ctx.send(embed=helpembed, ephemeral=True)
+
+    @bot.slash_command(description="Get frequently asked questions.")
+    async def faq(ctx):
+        await ctx.send(embed=faqembed, ephemeral=True)
+
+    @bot.slash_command(description="Get release date information.")
+    async def releasedate(ctx):
+        await ctx.send(embed=releasedateembed, ephemeral=True)
+
+    @bot.slash_command(description="Get information about SIRHB.")
+    async def whois(ctx):
+        await ctx.send(embed=whoisembed, ephemeral=True)
+
+    @bot.slash_command(description="Get information about Axion Network.")
+    async def whatisthis(ctx):
+        await ctx.send(embed=whatisthisembed, ephemeral=True)
+
+    @bot.slash_command(description="Get help with the Mage class.")
+    async def magehelp(ctx):
+        row = discord.ui.MessageActionRow(
+            discord.ui.Select(
+                custom_id="select",
+                placeholder="Select the issue",
+                options=[
+                    discord.ui.SelectOption(label="Select me", value="Testing"),
+                    discord.ui.SelectOption(label="You can select me too", value="second_option")
+                ]
+            )
+        )
+        await ctx.send(embed=magehelpembed, components=[row], ephemeral=True)
+
+    @bot.slash_command(description="Get help with the Knight class.")
+    async def knighthelp(ctx):
+        await ctx.send(embed=knighthelpembed, ephemeral=True)
+
+    @bot.slash_command(description="Get help with the Warrior class.")
+    async def warriorhelp(ctx):
+        await ctx.send(embed=warriorhelpembed, ephemeral=True)
+
+    @bot.slash_command(description="Shrob can't code.")
+    async def shrob(ctx):
+        await ctx.send(embed=shrobembed)
+
