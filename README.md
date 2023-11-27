@@ -1,5 +1,5 @@
 # S.I.R.H.B-Python-v1
-SIRHB written in python - I have made the choice to sunset this project in favour of working on Doomscroller. I sadly dont have the time to do both.
+## I have made the choice to sunset this project in favour of working on Doomscroller. I sadly dont have the time to do both.
 
 Say hello to S.I.R.H.B. - the bot that's ready to help you rule your Discord server with an iron fist... wrapped in a velvet glove. This versatile bot can handle everything from moderation to answering frequently asked questions, all while bringing a touch of humor and wit to your server. With customizable features and lightning-fast response times, S.I.R.H.B. is the ultimate sidekick for any Discord server owner. So why settle for a bland bot when you can have a witty and reliable companion like S.I.R.H.B. by your side?
 
